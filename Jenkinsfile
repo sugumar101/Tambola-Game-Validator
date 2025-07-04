@@ -1,7 +1,7 @@
 pipeline {
     agent any
     environment {
-        IMAGE_NAME - 'sugumar101/Tambola-Game-Validator'
+        IMAGE_NAME: 'sugumar101/Tambola-Game-Validator'
     }
         
     stages {
