@@ -9,7 +9,8 @@ pipeline {
         stage('Checkout') {
             steps {
                 checkout([$class: 'GitSCM', branches: [[name: '*/main']], 
-                          userRemoteConfigs: [[url: 'https://github.com/sugumar101/Tambola-Game-Validator.git']]])
+                          userRemoteConfigs: [[url: 'https://github.com/sugumar101/Tambola-Game-Validator.git']]]),
+                            credentialsId: 'd6362cfb-30a6-4ddb-8c96-f16726e966df'
             }
         }
 
